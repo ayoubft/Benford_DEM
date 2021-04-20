@@ -7,6 +7,8 @@ Author: ayoubft
 """
 
 
+import numpy as np
+
 # Other method: 
 
 #def leadingDigit(x):
@@ -14,10 +16,12 @@ Author: ayoubft
 #        x //= 10
 #    return x
 
-def get_dln(numd, f=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
+def get_dln(numd):
     """
     Get the distribution of leading digits of a given numerical distribution
     """
+    f=[0, 0, 0, 0, 0, 0, 0, 0, 0]
+    
     for i in numd:
         c = str(int(i))[0]
         if c == '1':
@@ -45,11 +49,11 @@ def fdln(f):
     """
     Get a list of distributions frequencies
     """
-    l = []
+    k = []
     n = sum(f)
     for i in range(len(f)):
-        l.append(f[i]/n)
-    return l
+        k.append(100*f[i]/n)
+    return k
     
 
 def f_lnd(f):
@@ -59,5 +63,5 @@ def f_lnd(f):
     n = sum(f)
     print("digit | frequency")
     for i in range(len(f)):
-        print(f"    {i+1} | {(f[i] / n):6.2f}")
+        print(f"    {i+1} | {100 * (f[i] / n):6.2f}")
         # "%d: %6.1f%%\n

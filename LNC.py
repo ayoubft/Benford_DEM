@@ -7,13 +7,6 @@ Author: ayoubft
 """
 
 
-# Other method: 
-
-#def leadingDigit(x):
-#    while x >= 10:
-#        x //= 10
-#    return x
-
 def get_dln(numd, f=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
     """
     Get the distribution of leading digits of a given numerical distribution
@@ -51,4 +44,12 @@ def f_lnd(f):
     print("digit | frequency")
     for i in range(len(f)):
         print(f"    {i+1} | {f[i]:6.2f}")
-        # "%d: %6.1f%%\n
+        
+        
+
+# Other method: 
+
+#def leadingDigit(x):
+#    while x >= 10:
+#        x //= 10
+#    return x

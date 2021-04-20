@@ -38,12 +38,17 @@ def get_dln(numd, f=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
             f[7] += 1;
         elif c == '9':
             f[8] += 1;
+            
+    n = sum(f)
+        
+    for j in range(len(f)):
+        f[j] /=  n
         
     return f
 
 def f_lnd(f):
     n = sum(f)
+    print("digit | frequency")
     for i in range(len(f)):
-        print(f"{i+1}  | {f[i] / n}")
+        print(f"    {i+1} | {f[i]:6.2f}")
         # "%d: %6.1f%%\n
-    return 0

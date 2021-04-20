@@ -6,6 +6,14 @@ Make sure you numerical distribution spans a few orders of magnitude.
 Author: ayoubft
 """
 
+
+# Other method: 
+
+#def leadingDigit(x):
+#    while x >= 10:
+#        x //= 10
+#    return x
+
 def get_dln(numd, f=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
     """
     Get the distribution of leading digits of a given numerical distribution
@@ -32,3 +40,10 @@ def get_dln(numd, f=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
             f[8] += 1;
         
     return f
+
+def f_lnd(f):
+    n = sum(f)
+    for i in range(len(f)):
+        print(f"{i+1}  | {f[i] / n}")
+        # "%d: %6.1f%%\n
+    return 0

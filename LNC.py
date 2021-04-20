@@ -44,7 +44,21 @@ def get_dln(numd, f=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
         
     return f
 
+def fdln(f):
+    """
+    Get a list of distributions frequencies
+    """
+    l = []
+    n = sum(f)
+    for i in range(len(f)):
+        l.append(f[i]/n)
+    return l
+    
+
 def f_lnd(f):
+    """
+    Format the output
+    """
     n = sum(f)
     print("digit | frequency")
     for i in range(len(f)):

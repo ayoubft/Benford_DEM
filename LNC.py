@@ -1,38 +1,34 @@
 """
+Leading Numbers Count
 This script is for functions that return the distribution of leading digits of a numerical distribution.
 Make sure you numerical distribution spans a few orders of magnitude.
 
 Author: ayoubft
 """
 
-def getdld(numd):
+def get_dln(numd, f=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
     """
     Get the distribution of leading digits of a given numerical distribution
     """
-    
-    f1, f2, f3, f4, f5, f6, f7, f8, f9 = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-    
     for i in numd:
         c = str(i)[0]
         if c == '1':
-            f1 += 1
+            f[0] += 1
         elif c == '2':
-            f2 += 1;
+            f[1] += 1;
         elif c == '3':
-            f3 += 1;
+            f[2] += 1;
         elif c == '4':
-            f4 += 1;
+            f[3] += 1;
         elif c == '5':
-            f5 += 1;
+            f[4] += 1;
         elif c == '6':
-            f6 += 1;
+            f[5] += 1;
         elif c == '7':
-            f7 += 1;
+            f[6] += 1;
         elif c == '8':
-            f8 += 1;
+            f[7] += 1;
         elif c == '9':
-            f9 += 1;
+            f[8] += 1;
         
-        
-    
-    return f1, f2, f3, f4, f5, f6, f7, f8, f9
+    return f

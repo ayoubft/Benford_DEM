@@ -4,3 +4,10 @@ Make sure you numerical distribution spans a few orders of magnitude.
 
 Author: ayoubft
 """
+
+def getdld(numd):
+    """
+    Get the distribution of leading digits of a given numerical distribution
+    """
+    
+    

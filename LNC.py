@@ -38,10 +38,7 @@ def get_dln(numd, f=[0, 0, 0, 0, 0, 0, 0, 0, 0]):
             f[7] += 1;
         elif c == '9':
             f[8] += 1;
-        
-    for j in range(len(f)):
-        f[j] /=  len(f)
-        
+          
     return f
 
 def fdln(f):

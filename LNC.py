@@ -23,7 +23,7 @@ def get_dln(numd):
     f=[0, 0, 0, 0, 0, 0, 0, 0, 0]
     
     for i in numd:
-        c = str(abs(int(i)))[0]
+        c = str(int(i))[0]
         if c == '1':
             f[0] += 1
         elif c == '2':

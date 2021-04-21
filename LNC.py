@@ -6,11 +6,7 @@ Make sure you numerical distribution spans a few orders of magnitude.
 Author: ayoubft
 """
 
-
-import numpy as np
-
 # Other method: 
-
 #def leadingDigit(x):
 #    while x >= 10:
 #        x //= 10

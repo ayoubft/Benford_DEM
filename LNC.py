@@ -6,6 +6,10 @@ Make sure you numerical distribution spans a few orders of magnitude.
 Author: ayoubft
 """
 
+
+import matplotlib.pyplot as plt
+
+
 # Other method: 
 #def leadingDigit(x):
 #    while x >= 10:
@@ -63,10 +67,7 @@ def f_lnd(f):
         # "%d: %6.1f%%\n
 
 
-def plot_benford(X=list(range(1,  10)), 
-                 B = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.1, 4.6], 
-                 ff1,
-                 ff2):
+def plot_benford(X, B, ff1, ff2):
     """
     This function is to automate plotting Benford distributions 
     """
@@ -79,7 +80,7 @@ def plot_benford(X=list(range(1,  10)),
     # Naming the x-axis, y-axis and the whole graph
     plt.xlabel("Leading Digit", fontsize=20)
     plt.xticks(fontsize = 22)
-    plt.ylabel("Pourcentage", fontsize=20)
+    plt.ylabel("Percentage", fontsize=20)
     plt.yticks(fontsize = 22)
     plt.title("Leading Digits Distributions", fontsize=28)
 

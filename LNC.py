@@ -89,9 +89,8 @@ def plot_benford(X, B, ff1, ff2, ff3):
     return 0
 
 
-
+# Some constants for doing the plotting
 X = list(range(1,  10))
-
 B = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.1, 4.6]
 
 

@@ -61,3 +61,32 @@ def f_lnd(f):
     for i in range(len(f)):
         print(f"    {i+1} | {100 * (f[i] / n):6.2f}")
         # "%d: %6.1f%%\n
+
+
+def plot_benford(X=list(range(1,  10)), 
+                 B = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.1, 4.6], 
+                 ff1,
+                 ff2):
+    """
+    This function is to automate plotting Benford distributions 
+    """
+    # Plotting both the curves simultaneously
+    plt.figure(figsize=(15, 12))
+    plt.plot(X, B, '--', color='r', label='Benford', linewidth=8)
+    plt.plot(X, ff1, color='g', label='DEM', linewidth=5)
+    plt.plot(X, ff2, color='b', label='ASPECT', linewidth=5)
+
+    # Naming the x-axis, y-axis and the whole graph
+    plt.xlabel("Leading Digit", fontsize=20)
+    plt.xticks(fontsize = 22)
+    plt.ylabel("Pourcentage", fontsize=20)
+    plt.yticks(fontsize = 22)
+    plt.title("Leading Digits Distributions", fontsize=28)
+
+    # Adding legend, which helps us recognize the curve according to it's color
+    plt.legend(fontsize=18)
+
+    # To load the display window
+    plt.show()
+    
+    return 0

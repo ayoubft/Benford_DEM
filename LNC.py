@@ -11,13 +11,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_theme()
 
-
-# Other method: 
-#def leadingDigit(x):
-#    while x >= 10:
-#        x //= 10
-#    return x
-
 def get_dln(numd):
     """
     Get the distribution of leading digits of a given numerical distribution
@@ -69,7 +62,7 @@ def f_lnd(f):
         # "%d: %6.1f%%\n
 
 
-def plot_benford(X, B, ff1, ff2):
+def plot_benford(X, B, ff1, ff2, ff3):
     """
     This function is to automate plotting Benford distributions 
     """
@@ -77,7 +70,8 @@ def plot_benford(X, B, ff1, ff2):
     plt.figure(figsize=(15, 12))
     plt.plot(X, B, '--', color='r', label='Benford', linewidth=8)
     plt.plot(X, ff1, color='g', label='DEM', linewidth=5)
-    plt.plot(X, ff2, color='b', label='ASPECT', linewidth=5)
+    plt.plot(X, ff2, color='b', label='SLOPE', linewidth=5)
+    plt.plot(X, ff3, color='y', label='ASPECT', linewidth=5)
 
     # Naming the x-axis, y-axis and the whole graph
     plt.xlabel("Leading Digit", fontsize=20)
@@ -93,3 +87,17 @@ def plot_benford(X, B, ff1, ff2):
     plt.show()
     
     return 0
+
+
+
+X = list(range(1,  10))
+
+B = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.1, 4.6]
+
+
+
+# Other method: 
+#def leadingDigit(x):
+#    while x >= 10:
+#        x //= 10
+#    return x

@@ -57,6 +57,7 @@ def f_lnd(f):
     """
     n = sum(f)
     print("digit | frequency")
+    print("------|----------")
     for i in range(len(f)):
         print(f"    {i+1} | {100 * (f[i] / n):6.2f}")
         # "%d: %6.1f%%\n

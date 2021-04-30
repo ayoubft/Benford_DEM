@@ -6,7 +6,7 @@ Make sure you numerical distribution spans a few orders of magnitude.
 Author: ayoubft
 """
 
-# Imports
+# Import needed libraries
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_theme()

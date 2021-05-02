@@ -100,7 +100,7 @@ def plot_benford(ff1, ff2, ff3):
     plt.plot(X, ff1, color='g', label='DEM', linewidth=5)
     plt.plot(X, ff2, color='b', label='SLOPE', linewidth=5)
     plt.plot(X, ff3, color='y', label='ASPECT', linewidth=5)
-    
+
     # Naming the x-axis, y-axis and the whole graph
     plt.xlabel("Leading Digit", fontsize=20)
     plt.xticks(fontsize = 22)
@@ -114,6 +114,7 @@ def plot_benford(ff1, ff2, ff3):
     # To load the display window
     plt.show()
     
+
 def plot_benford4(ff1, ff2, ff3, ff4):
     """This function is to automate plotting Benford distributions 
 
@@ -121,7 +122,7 @@ def plot_benford4(ff1, ff2, ff3, ff4):
         ff1 (array of floats): distribution of the DEM
         ff2 (array of floats): distribution of the SLOPE
         ff3 (array of floats): distribution of the ASPECT
-        ff3 (array of floats): distribution of the STRAHLER
+        ff4 (array of floats): distribution of the STRAHLER ORDER
     """    
     
     # Plotting both the curves simultaneously
@@ -144,7 +145,6 @@ def plot_benford4(ff1, ff2, ff3, ff4):
 
     # To load the display window
     plt.show()
-
 
 # Other method: 
 #def leadingDigit(x):

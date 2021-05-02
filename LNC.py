@@ -64,9 +64,12 @@ def fdln(f):
     
 
 def f_lnd(f):
-    """
-    Format the output
-    """
+    """Format the output
+
+    Args:
+        f (array of floats): The frequencies of distributiion of leading digits
+    """ 
+    
     n = sum(f)
     print("digit | frequency")
     print("------|----------")

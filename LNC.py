@@ -89,7 +89,7 @@ def plot_benford(ff1, ff2, ff3):
     """    
     
     # X (ints): 1 to 9 integers
-    X = list(range(1,  10))
+    X = np.arange(1,  10)
     # B (array of floats): distribution of Benford
     B = np.log10(1 + (1 / X))
 

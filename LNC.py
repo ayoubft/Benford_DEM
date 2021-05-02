@@ -69,7 +69,7 @@ def f_lnd(f):
     Args:
         f (array of floats): The frequencies of distributiion of leading digits
     """ 
-    
+
     n = sum(f)
     print("digit | frequency")
     print("------|----------")
@@ -79,9 +79,16 @@ def f_lnd(f):
 
 
 def plot_benford(X, B, ff1, ff2, ff3):
-    """
-    This function is to automate plotting Benford distributions 
-    """
+    """This function is to automate plotting Benford distributions 
+
+    Args:
+        X (ints): 1 to 9 integers
+        B (array of floats): distribution of Benford
+        ff1 (array of floats): distribution of the DEM
+        ff2 (array of floats): distribution of the SLOPE
+        ff3 (array of floats): distribution of the ASPECT
+    """    
+    
     # Plotting both the curves simultaneously
     plt.figure(figsize=(15, 12))
     plt.plot(X, B, '--', color='r', label='Benford', linewidth=8)
@@ -102,7 +109,6 @@ def plot_benford(X, B, ff1, ff2, ff3):
     # To load the display window
     plt.show()
     
-    return 0
 
 
 # Some constants for doing the plotting

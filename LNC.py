@@ -79,6 +79,12 @@ def f_lnd(f):
         # "%d: %6.1f%%\n
 
 
+# X (ints): 1 to 9 integers
+X = np.arange(1,  10)
+# B (array of floats): distribution of Benford
+B = np.log10(1 + (1 / X))
+
+
 def plot_benford(ff1, ff2, ff3):
     """This function is to automate plotting Benford distributions 
 
@@ -88,11 +94,6 @@ def plot_benford(ff1, ff2, ff3):
         ff3 (array of floats): distribution of the ASPECT
     """    
     
-    # X (ints): 1 to 9 integers
-    X = np.arange(1,  10)
-    # B (array of floats): distribution of Benford
-    B = np.log10(1 + (1 / X))
-
     # Plotting both the curves simultaneously
     plt.figure(figsize=(15, 12))
     plt.plot(X, B, '--', color='r', label='Benford', linewidth=8)

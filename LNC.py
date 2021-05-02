@@ -12,9 +12,15 @@ import seaborn as sns
 sns.set_theme()
 
 def get_dln(numd):
+    """Get the distribution of leading digits of a given numerical distribution
+
+    Args:
+        numd (float): [numpy]array to hold the distribution of numbers
+
+    Returns:
+        [type]: [description]
     """
-    Get the distribution of leading digits of a given numerical distribution
-    """
+
     f=[0, 0, 0, 0, 0, 0, 0, 0, 0]
     
     for i in numd:

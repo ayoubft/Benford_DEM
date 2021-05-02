@@ -7,6 +7,7 @@ Author: ayoubft
 """
 
 # Import needed libraries
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_theme()
@@ -78,17 +79,20 @@ def f_lnd(f):
         # "%d: %6.1f%%\n
 
 
-def plot_benford(X, B, ff1, ff2, ff3):
+def plot_benford(ff1, ff2, ff3):
     """This function is to automate plotting Benford distributions 
 
-    Args:
-        X (ints): 1 to 9 integers
-        B (array of floats): distribution of Benford
+    Args:        
         ff1 (array of floats): distribution of the DEM
         ff2 (array of floats): distribution of the SLOPE
         ff3 (array of floats): distribution of the ASPECT
     """    
     
+    # X (ints): 1 to 9 integers
+    X = list(range(1,  10))
+    # B (array of floats): distribution of Benford
+    B = np.log10(1 + (1 / X))
+
     # Plotting both the curves simultaneously
     plt.figure(figsize=(15, 12))
     plt.plot(X, B, '--', color='r', label='Benford', linewidth=8)
@@ -109,11 +113,6 @@ def plot_benford(X, B, ff1, ff2, ff3):
     # To load the display window
     plt.show()
     
-
-
-# Some constants for doing the plotting
-X = list(range(1,  10))
-B = [30.1, 17.6, 12.5, 9.7, 7.9, 6.7, 5.8, 5.1, 4.6]
 
 
 

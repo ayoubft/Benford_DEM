@@ -100,7 +100,7 @@ def plot_benford(ff1, ff2, ff3):
     plt.plot(X, ff1, color='g', label='DEM', linewidth=5)
     plt.plot(X, ff2, color='b', label='SLOPE', linewidth=5)
     plt.plot(X, ff3, color='y', label='ASPECT', linewidth=5)
-
+    
     # Naming the x-axis, y-axis and the whole graph
     plt.xlabel("Leading Digit", fontsize=20)
     plt.xticks(fontsize = 22)
@@ -114,7 +114,36 @@ def plot_benford(ff1, ff2, ff3):
     # To load the display window
     plt.show()
     
+def plot_benford4(ff1, ff2, ff3, ff4):
+    """This function is to automate plotting Benford distributions 
 
+    Args:        
+        ff1 (array of floats): distribution of the DEM
+        ff2 (array of floats): distribution of the SLOPE
+        ff3 (array of floats): distribution of the ASPECT
+        ff3 (array of floats): distribution of the STRAHLER
+    """    
+    
+    # Plotting both the curves simultaneously
+    plt.figure(figsize=(15, 12))
+    plt.plot(X, B, '--', color='r', label='Benford', linewidth=8)
+    plt.plot(X, ff1, color='g', label='DEM', linewidth=5)
+    plt.plot(X, ff2, color='b', label='SLOPE', linewidth=5)
+    plt.plot(X, ff3, color='y', label='ASPECT', linewidth=5)
+    plt.plot(X, ff4, color='k', label='STRAHLER', linewidth=5)
+
+    # Naming the x-axis, y-axis and the whole graph
+    plt.xlabel("Leading Digit", fontsize=20)
+    plt.xticks(fontsize = 22)
+    plt.ylabel("Percentage", fontsize=20)
+    plt.yticks(fontsize = 22)
+    plt.title("Leading Digits Distributions", fontsize=28)
+
+    # Adding legend, which helps us recognize the curve according to it's color
+    plt.legend(fontsize=18)
+
+    # To load the display window
+    plt.show()
 
 
 # Other method: 

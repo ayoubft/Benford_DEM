@@ -15,10 +15,10 @@ def get_dln(numd):
     """Get the distribution of leading digits of a given numerical distribution
 
     Args:
-        numd (float): [numpy]array to hold the distribution of numbers
+        numd (array of floats): [numpy]array to hold the distribution of numbers
 
     Returns:
-        [type]: [description]
+        array of ints: repartition of first digit numbers in numd
     """
 
     f=[0, 0, 0, 0, 0, 0, 0, 0, 0]

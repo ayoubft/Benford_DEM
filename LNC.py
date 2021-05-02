@@ -47,9 +47,15 @@ def get_dln(numd):
     return f
 
 def fdln(f):
+    """Get a list of distributions frequencies
+
+    Args:
+        f (array of ints): The repartition of first digits of a given distribution
+
+    Returns:
+        array of floats: The distribution of leading digits summed to 100%
     """
-    Get a list of distributions frequencies
-    """
+    
     k = []
     n = sum(f)
     for i in range(len(f)):

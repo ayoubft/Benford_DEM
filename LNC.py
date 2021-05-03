@@ -22,7 +22,7 @@ def get_dln(numd):
         array of ints: repartition of first digit numbers in numd
     """
 
-    f=[0, 0, 0, 0, 0, 0, 0, 0, 0]
+    f=[1, 1, 1, 1, 1, 1, 1, 1, 1]
     
     for i in numd:
         c = str(int(i))[0]

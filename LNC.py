@@ -47,7 +47,7 @@ def count_leading_digits(numd):
           
     return f
 
-def fdln(f):
+def frequency_leading_digits(f):
     """Get a list of distributions frequencies
 
     Args:

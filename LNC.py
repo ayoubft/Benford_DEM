@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_theme()
 
-def get_dln(numd):
+def count_leading_digits(numd):
     """Get the distribution of leading digits of a given numerical distribution
 
     Args:

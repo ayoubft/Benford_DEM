@@ -64,7 +64,7 @@ def frequency_leading_digits(f):
     return k
     
 
-def format_distribution_leading_digits(f):
+def print_distribution_leading_digits(f):
     """Format the output
 
     Args:

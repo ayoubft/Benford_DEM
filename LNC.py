@@ -16,7 +16,7 @@ def count_leading_digits(numd):
     """Get the distribution of leading digits of a given numerical distribution
 
     Args:
-        numd (array of floats): [numpy]array to hold the distribution of numbers
+        numd (array of floats): [numpy]array of the numbers
 
     Returns:
         array of ints: repartition of first digit numbers in numd

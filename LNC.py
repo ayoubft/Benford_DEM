@@ -12,6 +12,19 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_theme()
 
+def leading_digit(x):
+    """Get the first digit in a positive number
+
+    Args:
+        x (float): POSITIVE float
+
+    Returns:
+        int: one digit from 1 to 9
+    """    
+    while x >= 10:
+        x //= 10
+    return x
+
 def count_leading_digits(numd):
     """Get the distribution of leading digits of a given numerical distribution
 
@@ -83,19 +96,6 @@ def print_distribution_leading_digits(f):
 X = np.arange(1,  10)
 # B (array of floats): distribution of Benford
 B = 100 * np.log10(1 + (1 / X))
-
-def leading_digit(x):
-    """Get the first digit in a positive number
-
-    Args:
-        x (float): POSITIVE float
-
-    Returns:
-        int: one digit from 1 to 9
-    """    
-    while x >= 10:
-        x //= 10
-    return x
 
 def plot_benford(ff1, ff2, ff3):
     """This function is to automate plotting Benford distributions 

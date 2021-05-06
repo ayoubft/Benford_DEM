@@ -34,7 +34,7 @@ def count_leading_digits(numd):
     Returns:
         array of ints: repartition of first digit numbers in numd
     """
-
+    # Initialize the repartition by ones to avoid division by zero error further ahead
     f=[1, 1, 1, 1, 1, 1, 1, 1, 1]
     
     for i in numd:

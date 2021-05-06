@@ -157,9 +157,3 @@ def plot_benford4(ff1, ff2, ff3, ff4):
 
     # To load the display window
     plt.show()
-
-# Other method: 
-#def leadingDigit(x):
-#    while x >= 10:
-#        x //= 10
-#    return x

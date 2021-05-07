@@ -60,6 +60,41 @@ def count_leading_digits(numd):
           
     return f
 
+def count_leading_digits_var2(numd):
+    """Get the distribution of leading digits of a given numerical distribution
+
+    Args:
+        numd (array of floats): [numpy]array to hold the distribution of numbers
+
+    Returns:
+        array of ints: repartition of first digit numbers in numd
+    """
+
+    f=[1, 1, 1, 1, 1, 1, 1, 1, 1]
+    
+    for i in numd:
+        c = str(int(i))[0]
+        if c == '1':
+            f[0] += 1
+        elif c == '2':
+            f[1] += 1;
+        elif c == '3':
+            f[2] += 1;
+        elif c == '4':
+            f[3] += 1;
+        elif c == '5':
+            f[4] += 1;
+        elif c == '6':
+            f[5] += 1;
+        elif c == '7':
+            f[6] += 1;
+        elif c == '8':
+            f[7] += 1;
+        elif c == '9':
+            f[8] += 1;
+          
+    return f
+
 def frequency_leading_digits(f):
     """Get a list of distributions frequencies
 

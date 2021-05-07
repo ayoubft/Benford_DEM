@@ -190,5 +190,5 @@ def plot_benford4(ff1, ff2, ff3, ff4):
     # Adding legend, which helps us recognize the curve according to it's color
     plt.legend(fontsize=18)
 
-    # To load the display window
+    # To show the plot
     plt.show()

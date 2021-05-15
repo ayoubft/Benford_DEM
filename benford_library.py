@@ -3,7 +3,7 @@ Leading Numbers Count
 This script is for functions that return the distribution of leading digits of a numerical distribution.
 Make sure you numerical distribution spans a few orders of magnitude.
 
-Author: ayoubft & _ferda_kech_kech
+Author: ayoubft
 """
 
 # Import needed libraries

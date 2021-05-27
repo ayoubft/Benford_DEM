@@ -21,6 +21,7 @@ def leading_digit(x):
     Returns:
         int: one digit from 1 to 9
     """    
+    # loop until you get the leading digit
     while x >= 10:
         x //= 10
     return x

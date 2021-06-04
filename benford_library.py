@@ -1,5 +1,6 @@
 """
-Leading Numbers Count
+This 
+Leading Numbers Count functions
 This script is for functions that return and manipulate the distribution of leading digits of a numerical distribution.
 Make sure you numerical distribution spans a few orders of magnitude.
 
